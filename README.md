@@ -128,7 +128,7 @@ package and the `rapid-models` package (demonstrating that the two packages prod
     [docstring of the `interleave_blocks` function](src/gpytorch_mogp/utils/blocks.py).
 - **(Non-interleaved) block diagonal covariance matrix**: A joint covariance matrix that is block diagonal, with each
     block corresponding to the output of a single base kernel. E.g. for a multi-output kernel with two base kernels,
-    $`K_{\alpha}`$ and $`K_{\beta}`$, the joint covariance matrix is given by:
+    the joint covariance matrix is given by:
     ```math
     K(\mathbf{X}, \mathbf{X}^*) = \begin{bmatrix}
     K_{\alpha}(\mathbf{X}, \mathbf{X}^*) & \mathbf{0} \\
